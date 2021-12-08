@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Tienda de LIbros</title>
+</head>
+<body>
+    <div id="header">
+        <h1 id="title">Tienda de Libros</h1>
+        <button id="clients-button"onclick="window.location.href='clientes.html'">Clientes</button>
+        <button id="orders-button"onclick="window.location.href='ordenes.html'">Ordenes</button>
+        <button id="show-modal">Añadir libro</button>
+    </div>
+    <div class="container"></div>
+    <div id="book-container">
+
+    </div>
+
+<div class="bg-modal">
+
+    <div class="modal-content">
+        <div class="close">
+            +
+        </div>
+        <img src="data:image/png;base64,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" alt="">
+        <form id="form" method="POST" onsubmit="setTimeout(function(){window.location.reload();},10);">
+            <input type="text" name="title" id="bookTitle" placeholder="Título" required >
+            <input type="text" id="bookAuthor" placeholder="Autor" required>
+            <input type="text" id="bookEditorial" placeholder="Editorial" required>
+            <select class="form-select" id="bookGenre">
+                <option selected>Género...</option>
+                <option value="Horror">Horror</option>
+                <option value="Drama">Drama</option>
+                <option value="Ficción">Ficción</option>
+                <option value="Infantil">Infantil</option>
+                <option value="Historia">Historia</option>
+                <option value="Didáctico">Didáctico</option>
+                <option value="Autoayuda">Autoayuda</option>
+                <option value="Novela">Novela</option>
+              </select>
+
+            <input type="number" id="bookPrice" placeholder="Precio" required>
+            <button type="submit" value = "agregar"id="add-book-button">Añadir</button>
+        </form>
+    </div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>

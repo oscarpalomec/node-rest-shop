@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Órdenes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-dark " style="background-color: #323232;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="clientes.html">Clientes</a>
+          <a class="navbar-brand" href="index.html">Libros</a>
+          <a class="navbar-brand" href="ordenes.html">Órdenes</a>
+        </div>
+      </nav>
+    <div class="container">
+        
+        <div class="row mt-3 ">
+            <div class="col-md-6">
+                <h3>Añadir Orden</h3>
+                <form id="form"class="add-post-form">
+                    <div class="form-group mt-2">
+                        <label for="client">Cliente:</label>
+                        <select class="form-select" id="clientId">
+                            <option>Selecciona un cliente...</option>
+                        
+                        </select>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="client">Libro:</label>
+                        <select class="form-select" id="productId">
+                            <option>Selecciona un Libro...</option>
+                        
+                        </select>
+                    </div>
+                    
+                    
+                    <div class="form-group mt-2">
+                        <label for="phone">Cantidad</label>
+                        <input type="number" class="form-control" id="bookQuantity" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-2">Agregar Orden</button>
+
+                    
+                </form>
+                
+            </div>
+            <div class="col-md-6" id="book-info">
+                
+            </div>
+        </div>
+        <div class="orders-list row">
+    
+      
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="ordenes.js"></script>
+</body>
+</html>
